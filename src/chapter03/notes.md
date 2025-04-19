@@ -49,7 +49,58 @@ if x < 5 {
 for n in 1..=5 {
     println!("{}", n);
 }
+
+---
+
+## Loops in Rust
+
+Rust provides three main types of loops:
+
+### 1. `loop`
+- An infinite loop unless you use `break`.
+- Use for repeating code until you explicitly exit.
+
+```rust
+let mut count = 0;
+loop {
+    count += 1;
+    if count == 3 {
+        break;
+    }
+    println!("count = {}", count);
+}
 ```
+
+### 2. `while` loop
+- Runs as long as a condition is true.
+
+```rust
+let mut n = 1;
+while n <= 5 {
+    println!("{}", n);
+    n += 1;
+}
+```
+
+### 3. `for` loop
+- Iterate over a range or collection.
+- Most idiomatic for iterating in Rust.
+
+```rust
+for n in 1..=5 {
+    println!("{}", n);
+}
+
+let arr = [10, 20, 30];
+for val in arr.iter() {
+    println!("value: {}", val);
+}
+```
+
+#### Best Practices
+- Prefer `for` loops for collections and ranges.
+- Use `loop` for indefinite repetition with explicit exit.
+- Use `while` for condition-based repetition.
 
 ---
 

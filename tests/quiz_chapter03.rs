@@ -13,7 +13,16 @@ fn test_largest() {
 }
 
 #[test]
-fn test_print_1_to_5() {
-    // Not asserting output, just checking for panic
-    quiz::print_1_to_5();
+fn test_print_1_to_5_for() {
+    quiz::print_1_to_5_for();
+}
+
+#[test]
+fn test_print_1_to_5_while() {
+    quiz::print_1_to_5_while();
+}
+
+#[test]
+fn test_print_1_to_5_loop() {
+    quiz::print_1_to_5_loop();
 }
