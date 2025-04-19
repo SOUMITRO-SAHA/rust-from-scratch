@@ -6,8 +6,27 @@ Welcome to your structured Rust learning project! This project is based on [The 
 
 1. **Read** the short Rustdoc summary in each chapter module (`lib.rs`).
 2. **Attempt the quiz** by editing the code in `quiz.rs` for each chapter.
-3. **Test your solution** by running `cargo test --test quiz_chapterXX` (replace XX with the chapter number).
-4. **Continue** to the next chapter when you pass the quiz.
+3. **Test your solution** using the provided `Makefile` commands for each chapter quiz:
+
+   ```sh
+   make run_quiz01   # Runs tests for Chapter 1
+   make run_quiz02   # Runs tests for Chapter 2
+   # ... and so on for each chapter
+   ```
+
+   This will automatically run the appropriate test using `cargo test --test quiz_chapterXX` for the given chapter.
+
+4. **Before running a chapter or quiz test**, make sure to uncomment the corresponding module(s) in `src/lib.rs` (they are commented out by default to prevent build errors for unfinished chapters). For example, to work on Chapter 4, uncomment:
+
+   ```rust
+   pub mod chapter04 {
+       pub mod quiz;
+   }
+   ```
+
+   Then re-comment it if you want to skip that chapter later.
+
+5. **Continue** to the next chapter when you pass the quiz.
 
 ## Project Structure
 
