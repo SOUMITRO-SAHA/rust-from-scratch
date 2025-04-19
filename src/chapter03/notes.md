@@ -3,6 +3,7 @@
 This chapter covers foundational concepts in Rust that are common to many programming languages, including variables, data types, functions, comments, control flow, and more.
 
 ## Variables and Mutability
+
 - Variables are immutable by default. Use `mut` to make them mutable.
 
 ```rust
@@ -12,6 +13,7 @@ y = 15;
 ```
 
 ## Data Types
+
 - Scalar types: integers, floating-point numbers, booleans, characters.
 - Compound types: tuples, arrays.
 
@@ -22,6 +24,7 @@ let arr = [1, 2, 3, 4, 5];
 ```
 
 ## Functions
+
 - Defined with `fn` keyword.
 - Parameters must have types.
 
@@ -32,10 +35,12 @@ fn add(x: i32, y: i32) -> i32 {
 ```
 
 ## Comments
+
 - Single-line: `//`
 - Multi-line/doc: `///`, `//!`
 
 ## Control Flow
+
 - `if`, `else`, `else if` for conditional branching.
 - `loop`, `while`, `for` for loops.
 
@@ -49,14 +54,14 @@ if x < 5 {
 for n in 1..=5 {
     println!("{}", n);
 }
-
----
+```
 
 ## Loops in Rust
 
 Rust provides three main types of loops:
 
 ### 1. `loop`
+
 - An infinite loop unless you use `break`.
 - Use for repeating code until you explicitly exit.
 
@@ -72,6 +77,7 @@ loop {
 ```
 
 ### 2. `while` loop
+
 - Runs as long as a condition is true.
 
 ```rust
@@ -83,6 +89,7 @@ while n <= 5 {
 ```
 
 ### 3. `for` loop
+
 - Iterate over a range or collection.
 - Most idiomatic for iterating in Rust.
 
@@ -98,6 +105,7 @@ for val in arr.iter() {
 ```
 
 #### Best Practices
+
 - Prefer `for` loops for collections and ranges.
 - Use `loop` for indefinite repetition with explicit exit.
 - Use `while` for condition-based repetition.
@@ -105,6 +113,7 @@ for val in arr.iter() {
 ---
 
 # Quizzes
+
 - Quiz 1: Write a function that adds two numbers.
 - Quiz 2: Write a function that returns the largest element in an array.
 - Quiz 3: Write a function that prints numbers from 1 to 5 using a for loop.
